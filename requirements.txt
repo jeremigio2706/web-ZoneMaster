@@ -1,2 +1,4 @@
 openai
 flask
+Ta-Lib
+yfinace
