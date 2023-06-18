@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ZoneMaster | Inicio</title>
+    <link rel="shortcut icon" href="../static/image/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+</head>
+<body>
+<header class="hero">
+    <nav class="nav container">
+        <div class="nav_logo">
+            <h2 class="nav_titulo">ZoneMaster</h2>
+        </div>
+
+        <ul class="nav_link nav_link_menu">
+            <li class="nav_items">
+                <a href="/" class="nav_links">Inicio</a>
+            </li>
+
+            <li class="nav_items">
+                <a href="#descripcion" class="nav_links">Descripción</a>
+            </li>
+
+            <li class="nav_items">
+                <a href="#como_funciona" class="nav_links">Como funciona</a>
+            </li>
+
+            <li class="nav_items">
+                <a href="/zonemaster" class="nav_links">ZoneMaster</a>
+            </li>
+
+            <img src="../static/image/close.svg" alt="close" class="nav_close"/>
+        </ul>
+
+        <div class="nav_menu">
+            <img src="../static/image/menu.svg" alt="menu" class="nav_img"/>
+        </div>
+    </nav>
+
+    <section class="hero_container container">
+        <h1 class="hero_titulo">
+            ZoneMaster: Descubre las Zonas de Oferta y Demanda en Todos los Time
+            Frames
+        </h1>
+        <p class="hero_paragraph">
+            Tu guía confiable para aprovechar las oportunidades en cualquier marco
+            de tiempo
+        </p>
+    </section>
+</header>
+
+<main>
+    <section class="container about" id="descripcion">
+        <h2 class="subtitule">Descripcion</h2>
+        <p class="about_paragraph">
+            ZoneMaster, la página web definitiva para todos los traders que deseen
+            dominar las zonas de oferta y demanda en múltiples time frames.
+            Nuestra plataforma te proporciona las herramientas necesarias para
+            comprender y aprovechar estas dinámicas clave en los mercados
+            financieros.
+        </p>
+
+        <div class="about_main">
+            <article class="about_icons">
+                <img src="../static/image/zonas.svg" alt="Zonas de Demanda y de oferta" class="about_icon"/>
+                <h3 class="about_titulo">Descubre zonas ocultas de oportunidad</h3>
+                <p class="about_paragraph">
+                    ZoneMaster es una herramienta revolucionaria que te permite
+                    desentrañar las zonas de oferta y demanda en time frames mayores y
+                    menores. Con nuestra plataforma, podrás identificar oportunidades
+                    de trading que otros pasan por alto y maximizar tu potencial de
+                    ganancias.
+                </p>
+            </article>
+
+            <article class="about_icons">
+                <img src="../static/image/analisis.svg" alt="Analisis Tecnico" class="about_icon"/>
+                <h3 class="about_titulo">Análisis preciso en un solo lugar</h3>
+                <p class="about_paragraph">
+                    Con ZoneMaster, obtén un análisis detallado y preciso de las zonas
+                    de oferta y demanda en diferentes time frames, todo en un solo
+                    lugar. Nuestra plataforma te proporciona los datos necesarios para
+                    tomar decisiones informadas y estratégicas, sin la necesidad de
+                    consultar múltiples fuentes.
+                </p>
+            </article>
+
+            <article class="about_icons">
+                <img src="../static/image/wallet.svg" alt="Cripto" class="about_icon"/>
+                <h3 class="about_titulo">Personaliza tu enfoque de trading</h3>
+                <p class="about_paragraph">
+                    ZoneMaster te permite personalizar tu enfoque de trading al
+                    ofrecerte una visión completa de las zonas de oferta y demanda en
+                    todos los time frames. Adaptada a tus estrategias, esta
+                    herramienta te brinda la flexibilidad necesaria para operar en el
+                    marco de tiempo que mejor se ajuste a ti.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="know" id="como_funciona">
+        <h2 class="subtitule">Como funciona</h2>
+        <div class="container know_container">
+            <div class="know_text">
+                <h3 class="know_paragraph">
+                    ZoneMaster utiliza un diseño backend inteligente para
+                    proporcionarte datos y análisis precisos en tiempo real. Aquí te
+                    explicamos cómo puedes aprovechar al máximo la funcionalidad de la
+                    herramienta
+                </h3>
+                <p class="textderecha">
+                    <span class="number">1</span>Introduce el ticker de la acción: En
+                    la página web, tendrás la opción de ingresar el ticker de la
+                    acción que deseas analizar. Por ejemplo, puedes ingresar "AAPL"
+                    para Apple Inc.
+                </p>
+                <p class="textizq">
+                    Selección del marco de tiempo: ZoneMaster te ofrece la capacidad
+                    de analizar tanto time frames mayores como menores. Podrás elegir
+                    el marco de tiempo que desees, y la herramienta generará datos y
+                    análisis relevantes según tu selección.<span class="number"
+                >2</span
+                >
+                </p>
+                <p class="textderecha">
+                    <span class="number">3</span>Obtención de datos: Una vez ingresado
+                    el ticker y seleccionado el marco de tiempo, ZoneMaster utilizará
+                    la biblioteca "yfinance" para obtener los datos históricos de la
+                    acción. Los datos incluirán información como la fecha, apertura,
+                    alto, bajo, cierre, volumen y más.
+                </p>
+                <p class="textizq">
+                    Análisis técnico: ZoneMaster utiliza una variedad de indicadores
+                    técnicos, como SMA (media móvil simple), EMA (media móvil
+                    exponencial), RSI (Índice de fuerza relativa), MACD (Convergencia/
+                    divergencia de medias móviles), Estocástico, OBV (Volumen de
+                    balance) y CCI (Índice de canal de productos básicos). Estos
+                    indicadores se calculan utilizando los datos históricos y se
+                    agregan al conjunto de datos.<span class="number">4</span>
+                </p>
+
+                <p class="textderecha">
+                    <span class="number">5</span>Interacción con OpenAI: Una vez que
+                    se han obtenido y preparado los datos, ZoneMaster interactúa con
+                    el modelo de lenguaje de OpenAI para generar una respuesta basada
+                    en el análisis de los datos. La herramienta utiliza la acción del
+                    precio y los indicadores técnicos para identificar zonas de oferta
+                    y demanda.
+                </p>
+
+                <p class="textizq">
+                    Visualización de resultados: ZoneMaster te mostrará las zonas de
+                    precios potenciales para compras y ventas. La respuesta generada
+                    por OpenAI se presenta en la página web para que puedas analizarla
+                    como un analista técnico.<span class="number">6</span>
+                </p>
+            </div>
+
+            <figure class="know_picture">
+                <img src="../static/image/billetes.jpg" alt="Emprende" class="know_img"/>
+            </figure>
+        </div>
+        <p class="container textcent">
+            Recuerda que el trading conlleva riesgos y que los resultados
+            generados por ZoneMaster son solo sugerencias basadas en el análisis
+            de datos. Siempre es importante realizar tu propia investigación y
+            análisis antes de tomar decisiones de trading. ¡Utiliza ZoneMaster
+            como tu aliado en el análisis de zonas de oferta y demanda para
+            mejorar tus decisiones de trading!
+        </p>
+    </section>
+
+    <section class="question container">
+        <h2 class="subtitule">Preguntas frecuentes</h2>
+        <section class="question_container">
+            <article class="question_padding">
+                <div class="question_answer">
+                    <h3 class="question_titulos">
+                        ¿Qué es ZoneMaster?<span class="arrow">
+                  <img src="../static/image/arrow.svg" alt="mostrar" class="question_img"/>
+                </span>
+                    </h3>
+
+                    <p class="question_show">
+                        ZoneMaster es una herramienta de trading que te permite
+                        identificar zonas de oferta y demanda en diferentes marcos de
+                        tiempo, proporcionando información valiosa para tus decisiones
+                        de compra y venta en el mercado.
+                    </p>
+                </div>
+            </article>
+            <article class="question_padding">
+                <div class="question_answer">
+                    <h3 class="question_titulos">
+                        ¿Cómo funciona ZoneMaster?<span class="arrow">
+                  <img src="../static/image/arrow.svg" alt="mostrar" class="question_img"/>
+                </span>
+                    </h3>
+
+                    <p class="question_show">
+                        ZoneMaster utiliza análisis técnico y una variedad de
+                        indicadores, como SMA, EMA, RSI, MACD, Estocástico, OBV y CCI,
+                        para identificar posibles zonas de oferta y demanda en un marco
+                        de tiempo mayor y uno menor. La herramienta te proporciona datos
+                        en tiempo real, y tú, como analista técnico, evalúas la
+                        información y respondes con las zonas de precios de posibles
+                        compras y ventas.
+                    </p>
+                </div>
+            </article>
+            <article class="question_padding">
+                <div class="question_answer">
+                    <h3 class="question_titulos">
+                        ¿Cuáles son los marcos de tiempo disponibles en ZoneMaster?<span
+                            class="arrow"
+                    >
+                  <img src="../static/image/arrow.svg" alt="mostrar" class="question_img"/>
+                </span>
+                    </h3>
+
+                    <p class="question_show">
+                        ZoneMaster te ofrece la posibilidad de analizar dos marcos de
+                        tiempo: uno mayor, como 1 año con intervalo de 1, 2, 4 horas, o 1 dia, y uno
+                        menor, como 60 días con intervalo de 1, 5, 15, 30 minutos. Esto te permite
+                        tener una perspectiva amplia y detallada del mercado.
+                    </p>
+                </div>
+            </article>
+            <article class="question_padding">
+                <div class="question_answer">
+                    <h3 class="question_titulos">
+                        ¿Cómo puedo acceder a ZoneMaster?<span class="arrow">
+                  <img src="../static/image/arrow.svg" alt="mostrar" class="question_img"/>
+                </span>
+                    </h3>
+
+                    <p class="question_show">
+                        Puedes acceder a ZoneMaster a través de nuestra plataforma web.
+                        Solo presione ZoneMaster y tendrás acceso a la herramienta y a
+                        los datos en tiempo real.
+                    </p>
+                </div>
+            </article>
+            <article class="question_padding">
+                <div class="question_answer">
+                    <h3 class="question_titulos">
+                        ¿ZoneMaster garantiza el éxito en mis operaciones de
+                        trading?<span class="arrow">
+                  <img src="../static/image/arrow.svg" alt="mostrar" class="question_img"/>
+                </span>
+                    </h3>
+
+                    <p class="question_show">
+                        No podemos garantizar el éxito en tus operaciones de trading.
+                        ZoneMaster proporciona sugerencias basadas en análisis de datos,
+                        pero el trading conlleva riesgos y los mercados financieros son
+                        impredecibles. Siempre es importante realizar tu propia
+                        investigación y análisis antes de tomar decisiones de trading.
+                    </p>
+                </div>
+            </article>
+            <article class="question_padding">
+                <div class="question_answer">
+                    <h3 class="question_titulos">
+                        ¿Cómo puedo obtener soporte técnico o realizar consultas sobre
+                        ZoneMaster?<span class="arrow">
+                  <img src="../static/image/arrow.svg" alt="mostrar" class="question_img"/>
+                </span>
+                    </h3>
+
+                    <p class="question_show">
+                        Si necesitas soporte técnico o tienes alguna consulta sobre
+                        ZoneMaster, puedes contactarnos a través de nuestro canal de
+                        soporte en https://t.me/jetrader_cu. Estaremos encantados de
+                        ayudarte.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </section>
+</main>
+
+<footer class="footer">
+    <section class="footer_container container">
+        <nav class="nav nav--footer">
+            <h2 class="footer_titulo">ZoneMaster</h2>
+            <ul class="nav_link nav_link--footer">
+                <li class="nav_items">
+                    <a href="/" class="nav_links">Inicio</a>
+                </li>
+
+                <li class="nav_items">
+                    <a href="#descripcion" class="nav_links">Descripción</a>
+                </li>
+
+                <li class="nav_items">
+                    <a href="#como_funciona" class="nav_links">Como funciona</a>
+                </li>
+
+                <li class="nav_items">
+                    <a href="/zonemaster" class="nav_links">ZoneMaster</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="footer_copy container">
+
+        <div class="footer_social">
+            <a href="https://bit.ly/alexruizn7" class="footer_icons"
+            ><img src="../static/image/instagram.svg" alt="Instagram" class="footer_img"
+            /></a>
+            <a href="https://bit.ly/AlexRuizChannel" class="footer_icons"
+            ><img src="../static/image/youtube.svg" alt="You Tube" class="footer_img"
+            /></a>
+            <a href="https://t.me/joinalexruiz" class="footer_icons"
+            ><img src="../static/image/telegram.svg" alt="Telegram" class="footer_img"
+            /></a>
+        </div>
+        <h3 class="footer_derechos">Derechos reservados &copy; Jorge Ernesto Remigio https://t.me/jetrader_cu</h3>
+
+
+    </section>
+</footer>
+
+<script src="../static/js/js.js"></script>
+<script src="../static/js/menu.js"></script>
+</body>
+</html>
